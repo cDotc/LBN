@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="bn" class="h-full">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>My Dear Classmates...</title>
+    
+    <!-- Google Fonts: Hind Siliguri -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Hind Siliguri', 'sans-serif'],
+                    },
+                    colors: {
+                        brand: {
+                            50: '#f0f9ff',
+                            100: '#e0f2fe',
+                            200: '#bae6fd',
+                            500: '#0284c7',
+                            800: '#075985',
+                        }
+                    },
+                    animation: {
+                        'fade-in': 'fadeIn 0.8s ease-out forwards',
+                        'subtle-pulse': 'subtleGlow 3s infinite alternate',
+                        'bounce-slow': 'bounceSlow 2s infinite',
+                    },
+                    keyframes: {
+                        fadeIn: {
+                            '0%': { opacity: '0', transform: 'translateY(12px) scale(0.98)' },
+                            '100%': { opacity: '1', transform: 'translateY(0) scale(1)' },
+                        },
+                        subtleGlow: {
+                            '0%': { boxShadow: '0 10px 25px -5px rgba(186, 230, 253, 0.4), 0 8px 10px -6px rgba(186, 230, 253, 0.2)' },
+                            '100%': { boxShadow: '0 20px 30px -5px rgba(186, 230, 253, 0.7), 0 10px 12px -6px rgba(186, 230, 253, 0.4)' },
+                        },
+                        bounceSlow: {
+                            '0%, 100%': { transform: 'translateY(0)' },
+                            '50%': { transform: 'translateY(4px)' },
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    
+    <style>
+        /* Hide scrollbar for Chrome, Safari and Opera */
+        .no-scrollbar::-webkit-scrollbar {
+            display: none;
+        }
+        /* Hide scrollbar for IE, Edge and Firefox */
+        .no-scrollbar {
+            -ms-overflow-style: none;  /* IE and Edge */
+            scrollbar-width: none;  /* Firefox */
+        }
+        
+        body {
+            background: linear-gradient(135deg, #e0f2fe 0%, #e6f4ea 45%, #d1fae5 75%, #bae6fd 100%);
+            font-family: 'Hind Siliguri', sans-serif;
+            min-height: 100vh;
+        }
+
+        /* Improved inline highlights with safe line-height spacing and mint accents */
+        .hl-cyan {
+            background-color: #e0f2fe;
+            color: #0369a1;
+            padding: 2px 8px;
+            border-radius: 6px;
+            font-weight: 600;
+            display: inline-block;
+            margin: 2px 0;
+            line-height: 1.6;
+        }
+
+        .hl-blue {
+            background-color: #dbeafe;
+            color: #1d4ed8;
+            padding: 2px 8px;
+            border-radius: 6px;
+            font-weight: 600;
+            display: inline-block;
+            margin: 2px 0;
+            line-height: 1.6;
+        }
+
+        .hl-yellow {
+            background-color: #fef9c3;
+            color: #854d0e;
+            padding: 2px 8px;
+            border-radius: 6px;
+            font-weight: 600;
+            display: inline-block;
+            margin: 2px 0;
+            line-height: 1.6;
+        }
+
+        .hl-peach {
+            background-color: #ffedd5;
+            color: #c2410c;
+            padding: 2px 8px;
+            border-radius: 6px;
+            font-weight: 600;
+            display: inline-block;
+            margin: 2px 0;
+            line-height: 1.6;
+        }
+
+        .hl-mint {
+            background-color: #d1fae5;
+            color: #047857;
+            padding: 2px 8px;
+            border-radius: 6px;
+            font-weight: 600;
+            display: inline-block;
+            margin: 2px 0;
+            line-height: 1.6;
+        }
+
+        .hl-bold {
+            font-weight: 700;
+            color: #0f172a;
+        }
+        
+        /* Premium Card Effect Blocks for special text with Mint & Cyan Tint */
+        .quote-block {
+            background: linear-gradient(135deg, #ecfdf5 0%, #e0f2fe 100%);
+            border-left: 4px solid #10b981;
+            border-top: 1px solid rgba(167, 243, 208, 0.8);
+            border-right: 1px solid rgba(186, 230, 253, 0.8);
+            border-bottom: 1px solid rgba(186, 230, 253, 0.8);
+            padding: 16px 18px;
+            margin: 16px 0;
+            border-radius: 16px;
+            box-shadow: 0 4px 14px rgba(16, 185, 129, 0.08);
+            font-style: normal;
+        }
+    </style>
+</head>
+
+<body class="h-full w-full flex items-center justify-center p-3 sm:p-4 md:p-6 antialiased selection:bg-teal-200 selection:text-teal-900">
+
+    <!-- Container for framing nicely within mobile screen -->
+    <main class="w-full max-w-lg max-h-[94vh] sm:max-h-[90vh] flex flex-col justify-center my-auto">
+        
+        <!-- Single Main Chat Bubble Container -->
+        <article class="bg-white/95 backdrop-blur-md border border-emerald-100/80 rounded-3xl shadow-2xl animate-fade-in animate-subtle-pulse flex flex-col overflow-hidden max-h-full">
+            
+            <div class="overflow-y-auto no-scrollbar p-5 sm:p-7 text-slate-700 text-[18px] sm:text-[20px] leading-[1.85] space-y-6">
+                
+                <!-- Chat Header inside scroll area with larger profile picture -->
+                <header class="flex flex-col items-center text-center pb-6 pt-3 bg-gradient-to-b from-teal-100/80 via-emerald-50/40 to-transparent rounded-2xl border-b border-emerald-100/70 relative mb-4">
+                    <div class="relative mb-3 mt-2">
+                        <img 
+                            id="user-avatar" 
+                            src="https://lh3.googleusercontent.com/d/10lLR_e5HvqIUeZfxkkLhp64oP0kOuUc9=s400" 
+                            alt="Nadim Profile" 
+                            class="w-28 h-28 sm:w-32 sm:h-32 rounded-full object-cover border-4 border-white shadow-lg ring-4 ring-emerald-200/70"
+                            onerror="handleImageError(this)"
+                        />
+                        <span class="absolute bottom-1 right-1 bg-white p-1.5 rounded-full shadow-md text-2xl leading-none" title="Sad">
+                            😔
+                        </span>
+                    </div>
+                    <div>
+                        <h1 class="text-2xl sm:text-3xl font-bold text-slate-800 leading-tight">
+                            <span class="hl-mint text-emerald-900 px-4 py-1">নাদিম</span>
+                        </h1>
+                        <p class="text-base sm:text-lg text-emerald-800/80 font-semibold mt-1">To My Dear Classmates...</p>
+                    </div>
+
+                    <!-- Downward Indicator Banner -->
+                    <div class="mt-4 px-4 py-2 bg-gradient-to-r from-emerald-100 to-sky-100 border border-emerald-200/80 rounded-xl text-emerald-900 text-sm font-semibold flex items-center gap-2 shadow-sm animate-bounce-slow">
+                        <span>Kindly শেষ দিনের বার্তাটা পড়ে নাও...</span>
+                        <svg class="w-4 h-4 text-emerald-700" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M19 14l-7 7m0 0l-7-7m7 7V3"></path>
+                        </svg>
+                    </div>
+                </header>
+
+                <p class="font-bold text-xl text-sky-800">
+                    My Dear Classmates…! 🥹
+                </p>
+
+                <p>
+                    <span class="hl-peach"><span class="hl-bold">স্বর্ণা</span>, <span class="hl-bold">রাবেয়া</span>, <span class="hl-bold">রাফিনা</span> এবং <span class="hl-bold">সাওদা</span></span>…!
+                </p>
+
+                <p>
+                    আজকে আমাদের <span class="hl-yellow">স্কুলজীবনের শেষ দিন</span>…! সত্যি বলতে, আজকে তোমাদের সবার সাথে স্কুলে যাওয়ার অনেক ইচ্ছা ছিল…! কিন্তু বাড়ির কিছু ব্যক্তিগত সমস্যার কারণে ইচ্ছা থাকা সত্ত্বেও যেতে পারলাম না…! বিষয়টা আমার কাছে সত্যিই অনেক কষ্টের…! 😔
+                </p>
+
+                <p>
+                    দেখতে দেখতে এই স্কুলে আমার জীবনের “<span class="hl-cyan">৫টা বছর</span>” কেটে গেল…! সেই “<span class="hl-blue">Class 6</span>” থেকে আজ “<span class="hl-blue">Class 10</span>” পর্যন্ত…! কত স্মৃতি, কত হাসি-ঠাট্টা, কত ভালো-মন্দ মুহূর্ত জড়িয়ে আছে এই স্কুলটার সাথে…! আজ শেষ দিনটাতে উপস্থিত থাকতে পারলাম না, এই আফসোসটা হয়তো থেকেই যাবে…! 🥺
+                </p>
+
+                <p>
+                    আজকে স্কুলে গেলে হয়তো কথাগুলো তোমাদের সামনাসামনি বলতাম…! কিন্তু সেই সুযোগটা হলো না…! তাই মেসেজেই বলছি—এই কয়েক বছরে আমার কোনো কথা, আচরণ কিংবা মজা করার কারণে যদি তোমাদের কারও মনে কখনো কষ্ট দিয়ে থাকি, তাহলে <span class="hl-yellow">মন থেকে আমাকে ক্ষমা করে দিও</span>…!
+                </p>
+
+                <p>
+                    বিশেষ করে <span class="hl-peach"><span class="hl-bold">রাবেয়া</span> এবং <span class="hl-bold">রাফিনা</span></span>…! তোমাদের সাথে তো একদম “<span class="hl-blue">Class 6</span>” থেকে দীর্ঘ “<span class="hl-cyan">৫টা বছর</span>” একসাথে পড়াশোনা করেছি…! এত দিনের পরিচয়ে কখনো কোনো ভুল করে থাকলে কিংবা না বুঝে কষ্ট দিয়ে থাকলে, তোমরা দুজনও <span class="hl-yellow">আমাকে ক্ষমা করে দিও</span>…! 🤍
+                </p>
+
+                <div class="quote-block">
+                    “আর হ্যাঁ, আজ যেহেতু আমাদের স্কুলজীবনের শেষ দিন, তাই এই দিনটা উপলক্ষে তোমাদেরও যদি আমাকে কিছু বলার থাকে, তাহলে নির্দ্বিধায় রানাকে বলে দিও…! ও পরবর্তীতে আমাকে জানিয়ে দেবে…! শেষ দিন হিসেবে অন্তত কোনো কথা, অভিযোগ কিংবা মনের মধ্যে জমে থাকা কিছু থাকলে জানাতে পারো…!” 🙂
+                </div>
+
+                <p>
+                    আর সবশেষে আবারও বলতে চাই—<span class="hl-peach"><span class="hl-bold">স্বর্ণা</span>, <span class="hl-bold">রাবেয়া</span>, <span class="hl-bold">রাফিনা</span> এবং <span class="hl-bold">সাওদা</span></span>…! তোমাদের চারজনকে <span class="hl-yellow"><span class="hl-bold">Kindly, Kindly, Kindly</span></span> বলছি, আমার কোনো কথায় বা আচরণে কখনো কষ্ট পেয়ে থাকলে প্লিজ <span class="hl-yellow">আমাকে ক্ষমা করে দিও</span>…! 🥺
+                </p>
+
+                <div class="quote-block">
+                    “বিশেষ করে <span class="hl-peach"><span class="hl-bold">স্বর্ণা</span></span>, তোমার সাথে হয়তো কখনো কখনো একটু বেশি মজা করে ফেলেছিলাম কিংবা বাড়াবাড়ি করে ফেলেছিলাম…! আমি সত্যিই দুঃখিত…! <span class="hl-yellow"><span class="hl-bold">I'm Really Sorry</span></span>…!”
+                </div>
+
+                <p>
+                    আর শুধু তোমাদের চারজন নয়, আমাদের ক্লাসের প্রত্যেকের কাছেই আমি ক্ষমাপ্রার্থী…! সবাই আমাকে মাফ করে দিও এবং আমার জন্য দোয়া করো…! আমিও দোয়া করি, তোমাদের সবার ভবিষ্যৎ অনেক সুন্দর হোক এবং আসন্ন “<span class="hl-blue"><span class="hl-bold">SSC</span></span>” পরীক্ষায় সবাই যেন ভালো ফলাফল করতে পারি…! 🤲
+                </p>
+
+                <p>
+                    ইনশাআল্লাহ, পরবর্তী পরীক্ষার দিন আবার দেখা হচ্ছে…! 😊
+                </p>
+
+                <p class="font-semibold text-slate-800">
+                    Take Care, My Dear Classmates…!
+                </p>
+
+                <p class="font-semibold text-slate-800">
+                    And Thank You for Being a Part of My School Life! 🥹
+                </p>
+
+                <p class="pt-3 text-slate-800 font-bold border-t border-sky-100">
+                    ইতি,<br>
+                    <span class="hl-cyan inline-block mt-1.5"><span class="hl-bold">তোমাদের নাদিম</span></span>…!
+                </p>
+
+            </div>
+        </article>
+    </main>
+
+    <script>
+        // Fallback mechanism for Google Drive image or connection issues
+        function handleImageError(img) {
+            // First fallback try: Alternate Drive link structure
+            if (!img.dataset.retried) {
+                img.dataset.retried = "true";
+                img.src = "https://drive.google.com/uc?export=view&id=10lLR_e5HvqIUeZfxkkLhp64oP0kOuUc9";
+                return;
+            }
+            // Final fallback: SVG Avatar with "N" initial
+            const svgAvatar = `data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 100 100"><rect width="100%" height="100%" fill="%23e0f2fe"/><text x="50%" y="55%" font-family="sans-serif" font-size="42" font-weight="bold" fill="%230284c7" text-anchor="middle" dominant-baseline="middle">N</text></svg>`;
+            img.src = svgAvatar;
+        }
+    </script>
+</body>
+</html>
